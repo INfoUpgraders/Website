@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+<html>
+	<head>
+		<title>Website</title>
+	</head>
+
+	<body>
+
+		<div class = Login>
+
+			<div class="User_Login"><h1><b>User login</b></h1></div>
+
+			<div class="Name_Password">
+				<form>
+					<label for="fname">Username:</label><br>
+					<input type="text" id="Username" name="Username"><br><br>
+					<label for="lname">Password:</label><br>
+					<input type="text" id="Password" name="Password"><br><br>
+				</form>
+			</div>
+
+			<div class = "brutton"><center><input type="button" value="Login"></center><div>
+
+	
+	</body>
+
+	<style>
+
+		.Login {
+			margin-top: 27vh;
+			text-align: center;
+			color: white;
+			font-family: "Raleway", sans-serif;
+  			letter-spacing: 1.5;
+		}
+		
+		body {
+			background-color: #FFB4A2 ;
+		/*	background-color: #FFB4A2 #00FA9A, 696969, 042069; */
+			opacity: 1.0;
+		}
+		
+		.container {
+			display: flex;
+			margin-top: 27vh;
+			align-items: center;
+			height: 100vh;
+			width: 100vw;
+
+		}
+		.box1 {
+			height: 300px;
+			width: 300px;
+			background-color: #000;
+		}
+
+	</style>
+
+	<script>
+
+
+
+	</script>
+</html>	
+{% endblock %}
