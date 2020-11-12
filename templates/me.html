@@ -1,19 +1,107 @@
-<!doctype>
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+
+<!--
+NEEDS FIXING
+- make everything look cleaner
+- add the db with the login
+-->
 <html>
-    <head>
-        <title>Website</title>
+	<head>
+		<title>Website</title>
+	</head>
 
-    </head>
+	<body>
+		<div class = important>
+		<div class = Login>
 
-    <body>
+			<div class="User_Login"><h1><b>User login</b></h1></div><br>
 
-        <div id="particles-js"></div>
-    
-        <script src="particles.js"></script>
-        
-        <script>
-            particlesJS.load('particles-js', 'particles-cfg.json', function(){});
-        </script>
-    </body>
+			<div class="Name_Password">
+				<form>
+					<input placeholder="Username" type="text" /><br><br>
+					<input placeholder="Password" type="text" /><br><br>
+				</form>
+			</div>
 
-</html>    
+			<button class="button", onclick="myButton()"ID = button>Login</button>
+
+		</div>
+		</div>
+	
+	
+	</body>
+
+	<script>
+	
+		function myButton() {
+			alert ("button clicked");
+		}
+
+	</script>
+
+	<style>
+
+		.Login {
+			text-align: center;
+			color: white;
+			font-family: "Raleway", sans-serif;
+  			letter-spacing: 1.5;
+			background-color: #555555;
+			padding: 50px 50px;
+			display: inline-block;
+		}
+
+		
+		.important {
+			background-color: #00FA9A ;
+			opacity: 1.0;
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.button {
+			transition-duration: 0.4s;
+			border: 2px  #4CAF50;
+			padding: 10px 20px;
+			background: #00FA9A;
+		}
+
+		.button:hover {
+			color: white;
+			border: 4px solid #00FA9A;
+			background: transparent;
+		}
+
+		input {
+			outline: 0;
+			border-width: 0 0 2px;
+			border-color: white;
+			color: white;
+			background: transparent;
+		}
+
+		input:focus {
+			border-color: #00FA9A;
+			color: white;
+			background: transparent;
+		}
+
+		::placeholder {
+			color: #E0E0E0;
+		}
+
+	</style>
+
+{% endblock %}
+
+<!-- colors
+
+C819FA
+
+-->
